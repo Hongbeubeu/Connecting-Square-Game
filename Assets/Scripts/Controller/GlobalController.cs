@@ -30,7 +30,7 @@ public class GlobalController : MonoBehaviour
     {
         if (globalControllerInstance != null)
         {
-            DestroyObject(gameObject);
+            Destroy(gameObject);
         }
         else {
             DontDestroyOnLoad(gameObject);

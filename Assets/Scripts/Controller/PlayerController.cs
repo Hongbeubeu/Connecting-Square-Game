@@ -49,8 +49,8 @@ public class PlayerController : MonoBehaviour
     {
         gameController = GameObject.FindGameObjectWithTag(TagNames.GameController).GetComponent<GameController>();
         globalController = GameObject.FindGameObjectWithTag(TagNames.GlobalController).GetComponent<GlobalController>();
-        mainBlock = this.transform.FindChild(ObjectNames.MainBlock);
-        secondaryBlock = this.transform.FindChild(ObjectNames.SecondaryBlock);
+        mainBlock = this.transform.Find(ObjectNames.MainBlock);
+        secondaryBlock = this.transform.Find(ObjectNames.SecondaryBlock);
 
         if (gameController != null)
         {
